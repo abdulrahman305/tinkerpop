@@ -176,7 +176,7 @@ limitations under the License.
         <netty.version>4.1.101.Final</netty.version>
         <slf4j.version>1.7.25</slf4j.version>
         <snakeyaml.version>2.0</snakeyaml.version>
-        <spark.version>3.3.2</spark.version>
+        <spark.version>3.4.0</spark.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -384,7 +384,7 @@ limitations under the License.
                             <name>true.when.is.prerelease.version</name>
                             <value>${only.when.is.prerelease.version}</value>
                             <regex>${project.version}</regex>
-                            <replacement></replacement>
+                            <replacement/>
                             <failIfNoMatch>false</failIfNoMatch>
                         </configuration>
                     </execution>
@@ -401,7 +401,7 @@ limitations under the License.
                             <name>docker.tags.majorVersion.minorVersion</name>
                             <value>${parsedVersion.majorVersion}.${parsedVersion.minorVersion}${true.when.is.prerelease.version}</value>
                             <regex>.*true</regex>
-                            <replacement></replacement>
+                            <replacement/>
                             <failIfNoMatch>false</failIfNoMatch>
                         </configuration>
                     </execution>
@@ -417,7 +417,7 @@ limitations under the License.
                             <name>docker.tags.latest</name>
                             <value>latest${true.when.is.prerelease.version}</value>
                             <regex>.*true</regex>
-                            <replacement></replacement>
+                            <replacement/>
                             <failIfNoMatch>false</failIfNoMatch>
                         </configuration>
                     </execution>
