@@ -162,12 +162,12 @@ limitations under the License.
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
-            <version>2.13.5</version>
+            <version>2.15.0</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.13.5</version>
+            <version>2.15.0</version>
         </dependency>
         <!-- TEST -->
         <dependency>
@@ -271,7 +271,8 @@ limitations under the License.
                                 <requireEnvironmentVariable>
                                      <level>WARN</level>
                                      <variableName>HADOOP_GREMLIN_LIBS</variableName>
-                                     <message>Please set HADOOP_GREMLIN_LIBS OS environment variable as of http://tinkerpop.apache.org/docs/current/reference/#hadoop-gremlin&#x000A;HADOOP_GREMLIN_LIBS=&lt;hadoop installation dir&gt;/share/hadoop/common/lib seems good enough
+                                     <message>Please set HADOOP_GREMLIN_LIBS OS environment variable as of http://tinkerpop.apache.org/docs/current/reference/#hadoop-gremlin
+HADOOP_GREMLIN_LIBS=&lt;hadoop installation dir&gt;/share/hadoop/common/lib seems good enough
                                      </message>
                                 </requireEnvironmentVariable>
                             </rules>
