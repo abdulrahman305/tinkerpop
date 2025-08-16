@@ -156,7 +156,7 @@ limitations under the License.
         <commons.configuration.version>2.11.0</commons.configuration.version>
         <commons.lang.version>2.6</commons.lang.version>
         <commons.io.version>2.8.0</commons.io.version>
-        <commons.lang3.version>3.17.0</commons.lang3.version>
+        <commons.lang3.version>3.18.0</commons.lang3.version>
         <commons.text.version>1.10.0</commons.text.version>
         <cucumber.version>7.21.1</cucumber.version>
         <exp4j.version>0.4.8</exp4j.version>
@@ -386,7 +386,7 @@ limitations under the License.
                             <name>true.when.is.prerelease.version</name>
                             <value>${only.when.is.prerelease.version}</value>
                             <regex>${project.version}</regex>
-                            <replacement></replacement>
+                            <replacement/>
                             <failIfNoMatch>false</failIfNoMatch>
                         </configuration>
                     </execution>
@@ -403,7 +403,7 @@ limitations under the License.
                             <name>docker.tags.majorVersion.minorVersion</name>
                             <value>${parsedVersion.majorVersion}.${parsedVersion.minorVersion}${true.when.is.prerelease.version}</value>
                             <regex>.*true</regex>
-                            <replacement></replacement>
+                            <replacement/>
                             <failIfNoMatch>false</failIfNoMatch>
                         </configuration>
                     </execution>
@@ -419,7 +419,7 @@ limitations under the License.
                             <name>docker.tags.latest</name>
                             <value>latest${true.when.is.prerelease.version}</value>
                             <regex>.*true</regex>
-                            <replacement></replacement>
+                            <replacement/>
                             <failIfNoMatch>false</failIfNoMatch>
                         </configuration>
                     </execution>
